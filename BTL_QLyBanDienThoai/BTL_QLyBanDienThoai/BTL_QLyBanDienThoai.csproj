@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BB86B799-CAC7-4313-A6B3-769D8E0A49ED}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BTL_QLyBanDienThoai</RootNamespace>
+    <AssemblyName>BTL_QLyBanDienThoai</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HIEU\BaoCaoDienThoai.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HIEU\CHHDHien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HIEU\CHHDHien.Designer.cs">
+      <DependentUpon>CHHDHien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HIEU\CrystalReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HIEU\CTHDNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HIEU\CTHDNhap.Designer.cs">
+      <DependentUpon>CTHDNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HIEU\DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HIEU\DangNhap.Designer.cs">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HIEU\DungChung.cs" />
+    <Compile Include="HIEU\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HIEU\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HIEU\HoaDonBanHangcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HIEU\HoaDonBanHangcs.Designer.cs">
+      <DependentUpon>HoaDonBanHangcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HIEU\QLDanhMuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HIEU\QLDanhMuc.Designer.cs">
+      <DependentUpon>QLDanhMuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HIEU\QLDienThoai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HIEU\QLDienThoai.Designer.cs">
+      <DependentUpon>QLDienThoai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HIEU\QLHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HIEU\QLHoaDon.Designer.cs">
+      <DependentUpon>QLHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HIEU\QLKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HIEU\QLKhachHang.Designer.cs">
+      <DependentUpon>QLKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HIEU\QLNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HIEU\QLNhanVien.Designer.cs">
+      <DependentUpon>QLNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HIEU\QLyTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HIEU\QLyTaiKhoan.Designer.cs">
+      <DependentUpon>QLyTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HIEU\ThongTinTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HIEU\ThongTinTK.Designer.cs">
+      <DependentUpon>ThongTinTK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HON\ComonFunction.cs" />
+    <Compile Include="HON\CrystalReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HON\FormBillDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HON\FormBillDetail.Designer.cs">
+      <DependentUpon>FormBillDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HON\FormIDBillDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HON\FormIDBillDetail.Designer.cs">
+      <DependentUpon>FormIDBillDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LONG\Codechung.cs" />
+    <Compile Include="LONG\CrystalReport1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LONG\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LONG\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LONG\FormReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LONG\FormReport.Designer.cs">
+      <DependentUpon>FormReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLyBanDienThoaiDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLyBanDienThoaiDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="THO\ComonFunction.cs" />
+    <Compile Include="THO\CrystalReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="THO\FormBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THO\FormBill.Designer.cs">
+      <DependentUpon>FormBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="THO\FormCrystal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THO\FormCrystal.Designer.cs">
+      <DependentUpon>FormCrystal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="THO\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THO\FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="THO\FormMDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THO\FormMDI.Designer.cs">
+      <DependentUpon>FormMDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="THO\FormRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THO\FormRegister.Designer.cs">
+      <DependentUpon>FormRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="THO\FormWelcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THO\FormWelcome.Designer.cs">
+      <DependentUpon>FormWelcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TUAN\Baohanh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TUAN\Baohanh.Designer.cs">
+      <DependentUpon>Baohanh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TUAN\CrystalReport1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TUAN\reportviewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TUAN\reportviewer.Designer.cs">
+      <DependentUpon>reportviewer.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="HIEU\CHHDHien.resx">
+      <DependentUpon>CHHDHien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HIEU\CTHDNhap.resx">
+      <DependentUpon>CTHDNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HIEU\DangNhap.resx">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HIEU\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HIEU\QLDanhMuc.resx">
+      <DependentUpon>QLDanhMuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HIEU\QLDienThoai.resx">
+      <DependentUpon>QLDienThoai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HIEU\QLHoaDon.resx">
+      <DependentUpon>QLHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HIEU\QLKhachHang.resx">
+      <DependentUpon>QLKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HIEU\QLNhanVien.resx">
+      <DependentUpon>QLNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LONG\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="THO\FormBill.resx">
+      <DependentUpon>FormBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="THO\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="THO\FormMDI.resx">
+      <DependentUpon>FormMDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="THO\FormRegister.resx">
+      <DependentUpon>FormRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TUAN\Baohanh.resx">
+      <DependentUpon>Baohanh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TUAN\reportviewer.resx">
+      <DependentUpon>reportviewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="QLyBanDienThoaiDataSet.xsc">
+      <DependentUpon>QLyBanDienThoaiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLyBanDienThoaiDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLyBanDienThoaiDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLyBanDienThoaiDataSet.xss">
+      <DependentUpon>QLyBanDienThoaiDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dai-hoc-mo-ha-noi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fotor-ai-20240401172230.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-show-password-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-hide-password-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\verify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DV01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\45590.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
